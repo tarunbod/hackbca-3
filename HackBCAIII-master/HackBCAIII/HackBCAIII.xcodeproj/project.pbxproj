@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98BAB51C1CB164D70094C53B /* drive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAB51B1CB164D70094C53B /* drive.swift */; };
+		98BAB51E1CB1657B0094C53B /* running.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAB51D1CB1657B0094C53B /* running.swift */; };
+		98BAB5351CB16C850094C53B /* SocketAckEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAB5201CB16C850094C53B /* SocketAckEmitter.swift */; };
+		98BAB5361CB16C850094C53B /* SocketAckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAB5211CB16C850094C53B /* SocketAckManager.swift */; };
+		98BAB5371CB16C850094C53B /* SocketAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAB5221CB16C850094C53B /* SocketAnyEvent.swift */; };
+		98BAB5381CB16C850094C53B /* SocketClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAB5231CB16C850094C53B /* SocketClientSpec.swift */; };
+		98BAB5391CB16C850094C53B /* SocketEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAB5241CB16C850094C53B /* SocketEngine.swift */; };
+		98BAB53A1CB16C850094C53B /* SocketEngineClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAB5251CB16C850094C53B /* SocketEngineClient.swift */; };
+		98BAB53B1CB16C850094C53B /* SocketEnginePacketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAB5261CB16C850094C53B /* SocketEnginePacketType.swift */; };
+		98BAB53C1CB16C850094C53B /* SocketEnginePollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAB5271CB16C850094C53B /* SocketEnginePollable.swift */; };
+		98BAB53D1CB16C850094C53B /* SocketEngineSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAB5281CB16C850094C53B /* SocketEngineSpec.swift */; };
+		98BAB53E1CB16C850094C53B /* SocketEngineWebsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAB5291CB16C850094C53B /* SocketEngineWebsocket.swift */; };
+		98BAB53F1CB16C850094C53B /* SocketEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAB52A1CB16C850094C53B /* SocketEventHandler.swift */; };
+		98BAB5401CB16C850094C53B /* SocketIOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAB52B1CB16C850094C53B /* SocketIOClient.swift */; };
+		98BAB5411CB16C850094C53B /* SocketIOClientOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAB52C1CB16C850094C53B /* SocketIOClientOption.swift */; };
+		98BAB5421CB16C850094C53B /* SocketIOClientStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAB52D1CB16C850094C53B /* SocketIOClientStatus.swift */; };
+		98BAB5431CB16C850094C53B /* SocketLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAB52E1CB16C850094C53B /* SocketLogger.swift */; };
+		98BAB5441CB16C850094C53B /* SocketPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAB52F1CB16C850094C53B /* SocketPacket.swift */; };
+		98BAB5451CB16C850094C53B /* SocketParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAB5301CB16C850094C53B /* SocketParsable.swift */; };
+		98BAB5461CB16C850094C53B /* SocketStringReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAB5311CB16C850094C53B /* SocketStringReader.swift */; };
+		98BAB5471CB16C850094C53B /* SocketTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAB5321CB16C850094C53B /* SocketTypes.swift */; };
+		98BAB5481CB16C850094C53B /* SwiftRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAB5331CB16C850094C53B /* SwiftRegex.swift */; };
+		98BAB5491CB16C850094C53B /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BAB5341CB16C850094C53B /* WebSocket.swift */; };
+		B39A47161CB0D39900A82570 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39A47151CB0D39900A82570 /* AppDelegate.swift */; };
+		B39A47181CB0D39900A82570 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39A47171CB0D39900A82570 /* ViewController.swift */; };
+		B39A471B1CB0D39900A82570 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B39A47191CB0D39900A82570 /* Main.storyboard */; };
+		B39A471D1CB0D39900A82570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B39A471C1CB0D39900A82570 /* Assets.xcassets */; };
+		B39A47201CB0D39900A82570 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B39A471E1CB0D39900A82570 /* LaunchScreen.storyboard */; };
+		B39A472B1CB0D39A00A82570 /* HackBCAIIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39A472A1CB0D39A00A82570 /* HackBCAIIITests.swift */; };
+		B39A47361CB0D39A00A82570 /* HackBCAIIIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39A47351CB0D39A00A82570 /* HackBCAIIIUITests.swift */; };
+		D20756DECB925368D93DE1EB /* Pods_HackBCAIII.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CB505A084A4DB327AAF7D4 /* Pods_HackBCAIII.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B39A47271CB0D39A00A82570 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B39A470A1CB0D39900A82570 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B39A47111CB0D39900A82570;
+			remoteInfo = HackBCAIII;
+		};
+		B39A47321CB0D39A00A82570 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B39A470A1CB0D39900A82570 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B39A47111CB0D39900A82570;
+			remoteInfo = HackBCAIII;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		49F7C6F1453145414477B0AC /* Pods-HackBCAIII.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackBCAIII.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackBCAIII/Pods-HackBCAIII.release.xcconfig"; sourceTree = "<group>"; };
+		98BAB51B1CB164D70094C53B /* drive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = drive.swift; sourceTree = "<group>"; };
+		98BAB51D1CB1657B0094C53B /* running.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = running.swift; sourceTree = "<group>"; };
+		98BAB5201CB16C850094C53B /* SocketAckEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAckEmitter.swift; sourceTree = "<group>"; };
+		98BAB5211CB16C850094C53B /* SocketAckManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAckManager.swift; sourceTree = "<group>"; };
+		98BAB5221CB16C850094C53B /* SocketAnyEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAnyEvent.swift; sourceTree = "<group>"; };
+		98BAB5231CB16C850094C53B /* SocketClientSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketClientSpec.swift; sourceTree = "<group>"; };
+		98BAB5241CB16C850094C53B /* SocketEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngine.swift; sourceTree = "<group>"; };
+		98BAB5251CB16C850094C53B /* SocketEngineClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngineClient.swift; sourceTree = "<group>"; };
+		98BAB5261CB16C850094C53B /* SocketEnginePacketType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEnginePacketType.swift; sourceTree = "<group>"; };
+		98BAB5271CB16C850094C53B /* SocketEnginePollable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEnginePollable.swift; sourceTree = "<group>"; };
+		98BAB5281CB16C850094C53B /* SocketEngineSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngineSpec.swift; sourceTree = "<group>"; };
+		98BAB5291CB16C850094C53B /* SocketEngineWebsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngineWebsocket.swift; sourceTree = "<group>"; };
+		98BAB52A1CB16C850094C53B /* SocketEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEventHandler.swift; sourceTree = "<group>"; };
+		98BAB52B1CB16C850094C53B /* SocketIOClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClient.swift; sourceTree = "<group>"; };
+		98BAB52C1CB16C850094C53B /* SocketIOClientOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClientOption.swift; sourceTree = "<group>"; };
+		98BAB52D1CB16C850094C53B /* SocketIOClientStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClientStatus.swift; sourceTree = "<group>"; };
+		98BAB52E1CB16C850094C53B /* SocketLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketLogger.swift; sourceTree = "<group>"; };
+		98BAB52F1CB16C850094C53B /* SocketPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketPacket.swift; sourceTree = "<group>"; };
+		98BAB5301CB16C850094C53B /* SocketParsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketParsable.swift; sourceTree = "<group>"; };
+		98BAB5311CB16C850094C53B /* SocketStringReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketStringReader.swift; sourceTree = "<group>"; };
+		98BAB5321CB16C850094C53B /* SocketTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketTypes.swift; sourceTree = "<group>"; };
+		98BAB5331CB16C850094C53B /* SwiftRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftRegex.swift; sourceTree = "<group>"; };
+		98BAB5341CB16C850094C53B /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		A4CB505A084A4DB327AAF7D4 /* Pods_HackBCAIII.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackBCAIII.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEE3C2A2698903C523AB5EFE /* Pods-HackBCAIII.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackBCAIII.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackBCAIII/Pods-HackBCAIII.debug.xcconfig"; sourceTree = "<group>"; };
+		B39A47121CB0D39900A82570 /* HackBCAIII.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackBCAIII.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B39A47151CB0D39900A82570 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B39A47171CB0D39900A82570 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B39A471A1CB0D39900A82570 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B39A471C1CB0D39900A82570 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B39A471F1CB0D39900A82570 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B39A47211CB0D39900A82570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B39A47261CB0D39A00A82570 /* HackBCAIIITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackBCAIIITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B39A472A1CB0D39A00A82570 /* HackBCAIIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackBCAIIITests.swift; sourceTree = "<group>"; };
+		B39A472C1CB0D39A00A82570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B39A47311CB0D39A00A82570 /* HackBCAIIIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackBCAIIIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B39A47351CB0D39A00A82570 /* HackBCAIIIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackBCAIIIUITests.swift; sourceTree = "<group>"; };
+		B39A47371CB0D39A00A82570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B39A470F1CB0D39900A82570 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20756DECB925368D93DE1EB /* Pods_HackBCAIII.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B39A47231CB0D39A00A82570 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B39A472E1CB0D39A00A82570 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180C2516450B686796A88707 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4CB505A084A4DB327AAF7D4 /* Pods_HackBCAIII.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49DB9282A4E00422220E2222 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEE3C2A2698903C523AB5EFE /* Pods-HackBCAIII.debug.xcconfig */,
+				49F7C6F1453145414477B0AC /* Pods-HackBCAIII.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		98BAB51F1CB16C850094C53B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				98BAB5201CB16C850094C53B /* SocketAckEmitter.swift */,
+				98BAB5211CB16C850094C53B /* SocketAckManager.swift */,
+				98BAB5221CB16C850094C53B /* SocketAnyEvent.swift */,
+				98BAB5231CB16C850094C53B /* SocketClientSpec.swift */,
+				98BAB5241CB16C850094C53B /* SocketEngine.swift */,
+				98BAB5251CB16C850094C53B /* SocketEngineClient.swift */,
+				98BAB5261CB16C850094C53B /* SocketEnginePacketType.swift */,
+				98BAB5271CB16C850094C53B /* SocketEnginePollable.swift */,
+				98BAB5281CB16C850094C53B /* SocketEngineSpec.swift */,
+				98BAB5291CB16C850094C53B /* SocketEngineWebsocket.swift */,
+				98BAB52A1CB16C850094C53B /* SocketEventHandler.swift */,
+				98BAB52B1CB16C850094C53B /* SocketIOClient.swift */,
+				98BAB52C1CB16C850094C53B /* SocketIOClientOption.swift */,
+				98BAB52D1CB16C850094C53B /* SocketIOClientStatus.swift */,
+				98BAB52E1CB16C850094C53B /* SocketLogger.swift */,
+				98BAB52F1CB16C850094C53B /* SocketPacket.swift */,
+				98BAB5301CB16C850094C53B /* SocketParsable.swift */,
+				98BAB5311CB16C850094C53B /* SocketStringReader.swift */,
+				98BAB5321CB16C850094C53B /* SocketTypes.swift */,
+				98BAB5331CB16C850094C53B /* SwiftRegex.swift */,
+				98BAB5341CB16C850094C53B /* WebSocket.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B39A47091CB0D39900A82570 = {
+			isa = PBXGroup;
+			children = (
+				B39A47141CB0D39900A82570 /* HackBCAIII */,
+				98BAB51F1CB16C850094C53B /* Source */,
+				B39A47291CB0D39A00A82570 /* HackBCAIIITests */,
+				B39A47341CB0D39A00A82570 /* HackBCAIIIUITests */,
+				B39A47131CB0D39900A82570 /* Products */,
+				49DB9282A4E00422220E2222 /* Pods */,
+				180C2516450B686796A88707 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B39A47131CB0D39900A82570 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B39A47121CB0D39900A82570 /* HackBCAIII.app */,
+				B39A47261CB0D39A00A82570 /* HackBCAIIITests.xctest */,
+				B39A47311CB0D39A00A82570 /* HackBCAIIIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B39A47141CB0D39900A82570 /* HackBCAIII */ = {
+			isa = PBXGroup;
+			children = (
+				B39A47151CB0D39900A82570 /* AppDelegate.swift */,
+				B39A47171CB0D39900A82570 /* ViewController.swift */,
+				B39A47191CB0D39900A82570 /* Main.storyboard */,
+				98BAB51D1CB1657B0094C53B /* running.swift */,
+				98BAB51B1CB164D70094C53B /* drive.swift */,
+				B39A471C1CB0D39900A82570 /* Assets.xcassets */,
+				B39A471E1CB0D39900A82570 /* LaunchScreen.storyboard */,
+				B39A47211CB0D39900A82570 /* Info.plist */,
+			);
+			path = HackBCAIII;
+			sourceTree = "<group>";
+		};
+		B39A47291CB0D39A00A82570 /* HackBCAIIITests */ = {
+			isa = PBXGroup;
+			children = (
+				B39A472A1CB0D39A00A82570 /* HackBCAIIITests.swift */,
+				B39A472C1CB0D39A00A82570 /* Info.plist */,
+			);
+			path = HackBCAIIITests;
+			sourceTree = "<group>";
+		};
+		B39A47341CB0D39A00A82570 /* HackBCAIIIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B39A47351CB0D39A00A82570 /* HackBCAIIIUITests.swift */,
+				B39A47371CB0D39A00A82570 /* Info.plist */,
+			);
+			path = HackBCAIIIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B39A47111CB0D39900A82570 /* HackBCAIII */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B39A473A1CB0D39A00A82570 /* Build configuration list for PBXNativeTarget "HackBCAIII" */;
+			buildPhases = (
+				9D83E3CD73C5944BF62CAD77 /* Check Pods Manifest.lock */,
+				B39A470E1CB0D39900A82570 /* Sources */,
+				B39A470F1CB0D39900A82570 /* Frameworks */,
+				B39A47101CB0D39900A82570 /* Resources */,
+				1C10F9B287F97F980B8EAEB7 /* Embed Pods Frameworks */,
+				8A734216723B3381BE2797FC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HackBCAIII;
+			productName = HackBCAIII;
+			productReference = B39A47121CB0D39900A82570 /* HackBCAIII.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B39A47251CB0D39A00A82570 /* HackBCAIIITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B39A473D1CB0D39A00A82570 /* Build configuration list for PBXNativeTarget "HackBCAIIITests" */;
+			buildPhases = (
+				B39A47221CB0D39A00A82570 /* Sources */,
+				B39A47231CB0D39A00A82570 /* Frameworks */,
+				B39A47241CB0D39A00A82570 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B39A47281CB0D39A00A82570 /* PBXTargetDependency */,
+			);
+			name = HackBCAIIITests;
+			productName = HackBCAIIITests;
+			productReference = B39A47261CB0D39A00A82570 /* HackBCAIIITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B39A47301CB0D39A00A82570 /* HackBCAIIIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B39A47401CB0D39A00A82570 /* Build configuration list for PBXNativeTarget "HackBCAIIIUITests" */;
+			buildPhases = (
+				B39A472D1CB0D39A00A82570 /* Sources */,
+				B39A472E1CB0D39A00A82570 /* Frameworks */,
+				B39A472F1CB0D39A00A82570 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B39A47331CB0D39A00A82570 /* PBXTargetDependency */,
+			);
+			name = HackBCAIIIUITests;
+			productName = HackBCAIIIUITests;
+			productReference = B39A47311CB0D39A00A82570 /* HackBCAIIIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B39A470A1CB0D39900A82570 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Team;
+				TargetAttributes = {
+					B39A47111CB0D39900A82570 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 2J36W3NEML;
+					};
+					B39A47251CB0D39A00A82570 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = B39A47111CB0D39900A82570;
+					};
+					B39A47301CB0D39A00A82570 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = B39A47111CB0D39900A82570;
+					};
+				};
+			};
+			buildConfigurationList = B39A470D1CB0D39900A82570 /* Build configuration list for PBXProject "HackBCAIII" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B39A47091CB0D39900A82570;
+			productRefGroup = B39A47131CB0D39900A82570 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B39A47111CB0D39900A82570 /* HackBCAIII */,
+				B39A47251CB0D39A00A82570 /* HackBCAIIITests */,
+				B39A47301CB0D39A00A82570 /* HackBCAIIIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B39A47101CB0D39900A82570 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B39A47201CB0D39900A82570 /* LaunchScreen.storyboard in Resources */,
+				B39A471D1CB0D39900A82570 /* Assets.xcassets in Resources */,
+				B39A471B1CB0D39900A82570 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B39A47241CB0D39A00A82570 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B39A472F1CB0D39A00A82570 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C10F9B287F97F980B8EAEB7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackBCAIII/Pods-HackBCAIII-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A734216723B3381BE2797FC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackBCAIII/Pods-HackBCAIII-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D83E3CD73C5944BF62CAD77 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B39A470E1CB0D39900A82570 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98BAB53B1CB16C850094C53B /* SocketEnginePacketType.swift in Sources */,
+				98BAB5421CB16C850094C53B /* SocketIOClientStatus.swift in Sources */,
+				98BAB5361CB16C850094C53B /* SocketAckManager.swift in Sources */,
+				98BAB53E1CB16C850094C53B /* SocketEngineWebsocket.swift in Sources */,
+				98BAB5491CB16C850094C53B /* WebSocket.swift in Sources */,
+				98BAB5411CB16C850094C53B /* SocketIOClientOption.swift in Sources */,
+				98BAB53D1CB16C850094C53B /* SocketEngineSpec.swift in Sources */,
+				98BAB5471CB16C850094C53B /* SocketTypes.swift in Sources */,
+				B39A47181CB0D39900A82570 /* ViewController.swift in Sources */,
+				98BAB5351CB16C850094C53B /* SocketAckEmitter.swift in Sources */,
+				98BAB53A1CB16C850094C53B /* SocketEngineClient.swift in Sources */,
+				98BAB5371CB16C850094C53B /* SocketAnyEvent.swift in Sources */,
+				98BAB5481CB16C850094C53B /* SwiftRegex.swift in Sources */,
+				98BAB5441CB16C850094C53B /* SocketPacket.swift in Sources */,
+				98BAB5381CB16C850094C53B /* SocketClientSpec.swift in Sources */,
+				98BAB5461CB16C850094C53B /* SocketStringReader.swift in Sources */,
+				98BAB53C1CB16C850094C53B /* SocketEnginePollable.swift in Sources */,
+				98BAB51E1CB1657B0094C53B /* running.swift in Sources */,
+				98BAB5391CB16C850094C53B /* SocketEngine.swift in Sources */,
+				98BAB53F1CB16C850094C53B /* SocketEventHandler.swift in Sources */,
+				98BAB51C1CB164D70094C53B /* drive.swift in Sources */,
+				98BAB5431CB16C850094C53B /* SocketLogger.swift in Sources */,
+				B39A47161CB0D39900A82570 /* AppDelegate.swift in Sources */,
+				98BAB5401CB16C850094C53B /* SocketIOClient.swift in Sources */,
+				98BAB5451CB16C850094C53B /* SocketParsable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B39A47221CB0D39A00A82570 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B39A472B1CB0D39A00A82570 /* HackBCAIIITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B39A472D1CB0D39A00A82570 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B39A47361CB0D39A00A82570 /* HackBCAIIIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B39A47281CB0D39A00A82570 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B39A47111CB0D39900A82570 /* HackBCAIII */;
+			targetProxy = B39A47271CB0D39A00A82570 /* PBXContainerItemProxy */;
+		};
+		B39A47331CB0D39A00A82570 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B39A47111CB0D39900A82570 /* HackBCAIII */;
+			targetProxy = B39A47321CB0D39A00A82570 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B39A47191CB0D39900A82570 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B39A471A1CB0D39900A82570 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B39A471E1CB0D39900A82570 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B39A471F1CB0D39900A82570 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B39A47381CB0D39A00A82570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B39A47391CB0D39A00A82570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B39A473B1CB0D39A00A82570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEE3C2A2698903C523AB5EFE /* Pods-HackBCAIII.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = HackBCAIII/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = get.HackBCAIII;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		B39A473C1CB0D39A00A82570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49F7C6F1453145414477B0AC /* Pods-HackBCAIII.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = HackBCAIII/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = get.HackBCAIII;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		B39A473E1CB0D39A00A82570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HackBCAIIITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = get.HackBCAIIITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackBCAIII.app/HackBCAIII";
+			};
+			name = Debug;
+		};
+		B39A473F1CB0D39A00A82570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HackBCAIIITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = get.HackBCAIIITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackBCAIII.app/HackBCAIII";
+			};
+			name = Release;
+		};
+		B39A47411CB0D39A00A82570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HackBCAIIIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = get.HackBCAIIIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HackBCAIII;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B39A47421CB0D39A00A82570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HackBCAIIIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = get.HackBCAIIIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HackBCAIII;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B39A470D1CB0D39900A82570 /* Build configuration list for PBXProject "HackBCAIII" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B39A47381CB0D39A00A82570 /* Debug */,
+				B39A47391CB0D39A00A82570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B39A473A1CB0D39A00A82570 /* Build configuration list for PBXNativeTarget "HackBCAIII" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B39A473B1CB0D39A00A82570 /* Debug */,
+				B39A473C1CB0D39A00A82570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B39A473D1CB0D39A00A82570 /* Build configuration list for PBXNativeTarget "HackBCAIIITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B39A473E1CB0D39A00A82570 /* Debug */,
+				B39A473F1CB0D39A00A82570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B39A47401CB0D39A00A82570 /* Build configuration list for PBXNativeTarget "HackBCAIIIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B39A47411CB0D39A00A82570 /* Debug */,
+				B39A47421CB0D39A00A82570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B39A470A1CB0D39900A82570 /* Project object */;
+}

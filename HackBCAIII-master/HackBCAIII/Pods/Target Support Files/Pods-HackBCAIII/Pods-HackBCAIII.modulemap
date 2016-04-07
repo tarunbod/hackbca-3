@@ -1,0 +1,6 @@
+framework module Pods_HackBCAIII {
+  umbrella header "Pods-HackBCAIII-umbrella.h"
+
+  export *
+  module * { export * }
+}

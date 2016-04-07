@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (2.0.2)
+  - IBAnimatable (1.2)
+  - SwiftyJSON (2.3.2)
+  - UIColor_Hex_Swift (1.9)
+
+DEPENDENCIES:
+  - Alamofire (~> 2.0)
+  - IBAnimatable (~> 1.2)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+  - UIColor_Hex_Swift (~> 1.9)
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 2a5b70f06001316d4fb54501edc70b4084705da0
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: 8edbab00802a752bb5240cc2abe70e7e881488ad
+  IBAnimatable: bcebfaf34b041949da5ed668ac5ab2e28a4b2357
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  UIColor_Hex_Swift: 2ee747c0fed8b72b2135ef474b80a6921e489daa
+
+COCOAPODS: 0.39.0
