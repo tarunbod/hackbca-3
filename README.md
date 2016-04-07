@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-## Dr!ve
-#This project won the HackBCA 3 Code for good Award
-=======
 ##Dr!ve
 #This project won the HackBCA 3 Code for Good Award
->>>>>>> tarunbod/master
 
 ## Inspiration
 Americans take 233 billion car trips in a year. But driving poses many dangers, such as people trying to drive under the influence, or people falling asleep behind the wheel. Every 53 minutes, someone dies in a drunk driving related accident, and more than a third of drivers have admitted to falling asleep while driving. This poses danger to everyone, and our hack attempts to fix this problem.
